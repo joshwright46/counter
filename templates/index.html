@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Count</title>
+</head>
+
+<body style="text-align: center">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Counter:</h1>
+            <h5>{{counter}} times</h5>
+
+            <h1>Viewed:</h1>
+            <h5>{{viewed}} times</h5>
+
+            <form action='/add_this' method='post'>
+                <div>
+                    Add this many: <input type='text' name='number' class="form-control">
+                    <input class="btn btn-primary" type="submit" value="Add!">
+                </div>
+            </form>
+            <a class="btn btn-danger" href="http://localhost:5000/add_2" role="button">Add two visits!</a>
+            <a class="btn btn-success" href="http://localhost:5000/destroy_session" role="button">Reset</a>
+        </div>
+    </div>
+</body>
+
+</html>
